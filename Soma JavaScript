@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Soma JavaScript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    
+</head>
+<body>
+   <h1>Soma com JavaScript</h1>
+   <h3>Digite o um numero:<input type="number" id="num1"></h3>
+   <h3>Agora digite outro numero<input type="number" id="num2"></h3>
+   <button onclick="somar()">Somar</button>
+   
+   <section><h3><p id="resulti"></p></h3></section>
+
+
+   <script>
+
+    function somar() {
+
+
+        let num1 = Number (document.getElementById("num1").value)
+        let num2 = Number (document.getElementById("num2").value)
+
+        let somado = num1+num2;
+        let resultado = "O resultado é " + somado
+        
+        document.getElementById("resulti").innerHTML = resultado
+
+        
+
+
+    }
+
+
+
+   </script>
+</body>
+</html>
